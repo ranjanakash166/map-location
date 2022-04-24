@@ -1,15 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import { useEffect,useState } from 'react';
-import axios from 'axios';
 import GetCityDetails from './components/getcitydetails';
 
 function App() {
-  const[userDetails,setUserDetails] = useState();
-  const user = async () => {
+  //const[userDetails,setUserDetails] = useState();
+
+  /*const user = async () => {
     try{
       const userDetail = await axios.get("https://randomuser.me/api");
-      console.log(userDetail.data.results);
+      //console.log(userDetail.data.results);
       setUserDetails(userDetail.data.results);
     }catch(error){
       console.log(error);
@@ -18,7 +16,7 @@ function App() {
 
   useEffect(()=>{
     //user();
-  },[]);
+  },[]);*/
 
   return (
     <div className="App">
